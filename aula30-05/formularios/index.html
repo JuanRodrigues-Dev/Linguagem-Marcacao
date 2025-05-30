@@ -6,15 +6,21 @@
     <title>Formulários</title>
 </head>
 <body>
-      <form action="pagina.html" method="post">
-        <label for="idata">Data de nascimento:</label>
-        <input type="date" name="nome" id="idata">
-        <input type="submit" value="Enviar">
-
-
-        
+      <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" placeholder="Juan é Foda" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" autocomplete="current-password" placeholder="senha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
          
-
-      </form>
+    </form>
 </body>
 </html>

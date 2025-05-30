@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+        background-color: aliceblue;
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        }
+        div{
+            margin: 5px;
+            padding: 5px;
+            background-color: cornflowerblue;
+            border-radius: 6px;
+        }
+        .titulo{
+            font-weight: bold;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get">
+        <div>
+            <label class="titulo" for="Sabor">Informe o Sabor da Pizza:</label>
+            <select name="isabor" id="Sabor">
+                <option value="" selected>---Escolha---</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="portuguesa">Portuguesa</option>
+                <option value="marguerita">Marguerita</option>
+                <option value="mucarela">Muçarela</option>
+                <option value="napolitana">Napolitana</option>
+            </select>
+        </div>
+        <div>
+            <label class="titulo" for="iqte">Qunantidade:</label>
+            <input type="number" name="qte" id="iqte" value="1">
+        </div>
+        <div>
+            <label class="titulo" for="itamanho">Informe o Tamanho:</label>
+            <input type="radio" name="gg" id="igg">
+            <label for="igg">GG</label>
+            <input type="radio" name="g" id="ig">
+            <label for="ig">G</label>
+            <input type="radio" name="m" id="im">
+            <label for="im">M</label>
+            <input type="radio" name="p" id="ip">
+            <label for="ip">P</label>
+            
+        </div>
+        <div>
+            <label class="titulo" for="itamanho">Informe o(s) adicionais:</label>
+            <input type="checkbox" name="borda" id="iborda">
+            <label for="iborda">Borda de Chocolate</label>
+            <input type="checkbox" name="Calabresa" id="icalabresa">
+            <label for="icalabresa">Calabresa</label>
+            <input type="checkbox" name="Bacon" id="ibacon">
+            <label for="ibacon">Bacon</label>
+            <input type="checkbox" name="sorvete" id="isorvete">
+            <label for="isorvete">Sorvete</label>
+            <input type="checkbox" name="abacaxi" id="iabacaxi">
+            <label for="iabacaxi">Abacaxi</label>
+            
+        </div>
+        <div>
+            <label class="titulo" for="ibebida">Qual bebida:</label>
+            <select name="bebida" id="ibebida">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Refrigerantes">
+                <option value="coca">Coca-Cola</option>
+                <option value="cajuina">Cajuína</option>
+                <option value="guarana">Guarana</option>
+                </optgroup>
+                <optgroup label="Alcool">
+                <option value="skow">Skow</option>
+                <option value="itaipava">Itaipava</option>
+                <option value="Vinho">Velho Barreiro</option>
+                </optgroup>
+            </select>
+             
+        </div>
+         <div>
+            <label class="titulo" for="iqteb">Qunantidade de bebida:</label>
+            <input type="number" name="qteb" id="iqteb" value="1">
+        </div>
+        <div>
+            <label class="titulo" for="imsg">Endereço:</label><br>
+            <textarea name="msg" id="ismg" cols="45" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

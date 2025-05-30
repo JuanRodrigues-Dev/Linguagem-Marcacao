@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        background-color: aliceblue;
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        }
+        div{
+            margin: 5px;
+            padding: 5px;
+            background-color: cornflowerblue;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get">
+        <div>
+            <label for="inome">Informe seu nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Seu nome">
+        </div>
+        <div>
+            <label for="iemail">Informe seu Email</label>
+            <input type="email" name="email" id="iemail">
+        </div>
+        <div>
+            <label for="iassunto">Qual assunto:</label>
+            <select name="assunto" id="iassunto">
+                <option value="" selected>---Escolha---</option>
+                <option value="saude">Saude</option>
+                <option value="Jogos">Jogos</option>
+                <option value="Politica">Politica</option>
+                <option value="IA">IA</option>
+                <option value="Big data">Big Data</option>
+            </select>
+             
+        </div>
+        <div>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="ismg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
