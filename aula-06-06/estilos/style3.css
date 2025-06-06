@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+li{
+    background-color: rgb(194, 209, 223);
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    list-style: none;
+    text-align: center;
+    ;
+}
+li:hover{
+    background-color: rgb(187, 182, 182);
+    
+
+    font-size: 30px;
+
+}
+
+[data-genero=acao]{
+    color: red;
+}
+[data-genero=drama]{
+    color: cadetblue;
+}
+[data-genero=romance]{
+    color: chocolate;
+}
+[data-genero=terror]{
+    color: cornflowerblue;
+}
+[data-genero=fantasia]{
+    color: teal;
+}
