@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+#container > * {
+    border: 1px solid black;
+}
+#A{
+    grid-column-start: span 2;
+    background-color: lightblue;
+}
+#B{
+    grid-column-start: span 1;
+    background-color: burlywood;
+    
+}
+#C{
+   grid-column-start: span 1;
+   background-color: lightgray;
+}
+#D{
+    grid-column-start: span 2;
+    background-color: brown;
+}
+
+ 
