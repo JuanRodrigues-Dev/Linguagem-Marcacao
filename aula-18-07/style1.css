@@ -1,0 +1,36 @@
+#conta{
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows:200px 200px 150px 200px;
+    grid-template-areas: 
+    "menu menu menu"
+    "caixa1 longo caixa2"
+    "caixa3 longo caixa4"
+    "pe pe pe";
+    gap: 4px;
+}
+#conta > *{
+    background-color: rgba(59, 59, 233, 0.575);
+    border: 2px solid black;
+}
+#a{
+    grid-area: menu;
+}
+#b{
+    grid-area: caixa1;
+}
+#c{
+    grid-area: longo;
+}
+#d{
+    grid-area: caixa2;
+}
+#e{
+    grid-area: caixa3;
+}
+#f{
+    grid-area: caixa4;
+}
+#g{
+    grid-area: pe;
+}
